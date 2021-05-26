@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <Preference
+        android:key="help"
+        android:title="Help"
+        android:summary="How to navigate the app"
+
+    />
+
+    <PreferenceCategory android:title="Credits"
+
+        >
+
+        <Preference
+            android:title="Developer"
+            android:key="jav"
+            android:summary="Javier van Wyk"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://javiervw.github.io/"
+                />
+        </Preference>
+
+
+
+    </PreferenceCategory>
+
+    <Preference
+        android:key="version"
+        android:title="App version"
+        android:summary="1.0"
+        android:enabled="false"
+        />
+
+</androidx.preference.PreferenceScreen>
